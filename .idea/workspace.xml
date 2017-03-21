@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b746d6a7-d3db-4f25-85d2-33b4b864827d" name="Default" comment="" />
+    <ignored path="DBConnectionPool.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="DBConnectionPool" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="DBbean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/stiller/DBbean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+              <folding>
+                <element signature="e#1085#1086#0" expanded="true" />
+                <element signature="e#1116#1117#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1204#1205#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+                <element signature="e#1279#1280#0" expanded="true" />
+                <element signature="e#1336#1337#0" expanded="true" />
+                <element signature="e#1388#1389#0" expanded="true" />
+                <element signature="e#1426#1427#0" expanded="true" />
+                <element signature="e#1463#1464#0" expanded="true" />
+                <element signature="e#1520#1521#0" expanded="true" />
+                <element signature="e#1572#1573#0" expanded="true" />
+                <element signature="e#1611#1612#0" expanded="true" />
+                <element signature="e#1649#1650#0" expanded="true" />
+                <element signature="e#1708#1709#0" expanded="true" />
+                <element signature="e#1762#1763#0" expanded="true" />
+                <element signature="e#1798#1799#0" expanded="true" />
+                <element signature="e#1832#1833#0" expanded="true" />
+                <element signature="e#1884#1885#0" expanded="true" />
+                <element signature="e#1930#1931#0" expanded="true" />
+                <element signature="e#1974#1975#0" expanded="true" />
+                <element signature="e#2017#2018#0" expanded="true" />
+                <element signature="e#2086#2087#0" expanded="true" />
+                <element signature="e#2150#2151#0" expanded="true" />
+                <element signature="e#2192#2193#0" expanded="true" />
+                <element signature="e#2232#2233#0" expanded="true" />
+                <element signature="e#2296#2297#0" expanded="true" />
+                <element signature="e#2354#2355#0" expanded="true" />
+                <element signature="e#2398#2399#0" expanded="true" />
+                <element signature="e#2440#2441#0" expanded="true" />
+                <element signature="e#2507#2508#0" expanded="true" />
+                <element signature="e#2562#2563#0" expanded="true" />
+                <element signature="e#2598#2599#0" expanded="true" />
+                <element signature="e#2632#2633#0" expanded="true" />
+                <element signature="e#2683#2684#0" expanded="true" />
+                <element signature="e#2722#2723#0" expanded="true" />
+                <element signature="e#2756#2757#0" expanded="true" />
+                <element signature="e#2788#2789#0" expanded="true" />
+                <element signature="e#2836#2837#0" expanded="true" />
+                <element signature="e#2878#2879#0" expanded="true" />
+                <element signature="e#2914#2915#0" expanded="true" />
+                <element signature="e#2948#2949#0" expanded="true" />
+                <element signature="e#3000#3001#0" expanded="true" />
+                <element signature="e#3046#3047#0" expanded="true" />
+                <element signature="e#3106#3107#0" expanded="true" />
+                <element signature="e#3139#3140#0" expanded="true" />
+                <element signature="e#3191#3192#0" expanded="true" />
+                <element signature="e#3235#3236#0" expanded="true" />
+                <element signature="e#3265#3266#0" expanded="true" />
+                <element signature="e#3291#3292#0" expanded="true" />
+                <element signature="e#3329#3330#0" expanded="true" />
+                <element signature="e#3359#3360#0" expanded="true" />
+                <element signature="e#3394#3395#0" expanded="true" />
+                <element signature="e#3425#3426#0" expanded="true" />
+                <element signature="e#3473#3474#0" expanded="true" />
+                <element signature="e#3513#3514#0" expanded="true" />
+                <element signature="e#3548#3549#0" expanded="true" />
+                <element signature="e#3579#3580#0" expanded="true" />
+                <element signature="e#3627#3628#0" expanded="true" />
+                <element signature="e#3667#3668#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IConnectionPool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/stiller/IConnectionPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectionPool.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/stiller/ConnectionPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4088586">
+              <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#598#610#0" expanded="true" />
+                <element signature="e#672#684#0" expanded="true" />
+                <element signature="e#761#773#0" expanded="true" />
+                <element signature="e#4509#4510#0" expanded="true" />
+                <element signature="e#4545#4546#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectionPoolManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/stiller/ConnectionPoolManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#256#281#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBInitInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/stiller/DBInitInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/stiller/DBbean.java" />
+        <option value="$PROJECT_DIR$/src/com/stiller/IConnectionPool.java" />
+        <option value="$PROJECT_DIR$/src/com/stiller/ConnectionPoolManager.java" />
+        <option value="$PROJECT_DIR$/src/com/stiller/DBInitInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/stiller/CurrentConnection.java" />
+        <option value="$PROJECT_DIR$/src/com/stiller/ConnectionPool.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="705" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DBConnectionPool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DBConnectionPool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DBConnectionPool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DBConnectionPool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DBConnectionPool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stiller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/mysql-connector-java-5.1.22/mysql-connector-java-5.1.22-bin.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DBConnectionPool" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b746d6a7-d3db-4f25-85d2-33b4b864827d" name="Default" comment="" />
+      <created>1490075369654</created>
+      <option name="number" value="Default" />
+      <updated>1490075369654</updated>
+      <workItem from="1490075372340" duration="4759000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4759000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="705" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321976">
+          <caret line="83" column="17" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/stiller/IConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/stiller/DBInitInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/stiller/ConnectionPoolManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#256#281#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/stiller/DBbean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding>
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1204#1205#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1388#1389#0" expanded="true" />
+            <element signature="e#1426#1427#0" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+            <element signature="e#1611#1612#0" expanded="true" />
+            <element signature="e#1649#1650#0" expanded="true" />
+            <element signature="e#1708#1709#0" expanded="true" />
+            <element signature="e#1762#1763#0" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#1832#1833#0" expanded="true" />
+            <element signature="e#1884#1885#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1974#1975#0" expanded="true" />
+            <element signature="e#2017#2018#0" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+            <element signature="e#2192#2193#0" expanded="true" />
+            <element signature="e#2232#2233#0" expanded="true" />
+            <element signature="e#2296#2297#0" expanded="true" />
+            <element signature="e#2354#2355#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2440#2441#0" expanded="true" />
+            <element signature="e#2507#2508#0" expanded="true" />
+            <element signature="e#2562#2563#0" expanded="true" />
+            <element signature="e#2598#2599#0" expanded="true" />
+            <element signature="e#2632#2633#0" expanded="true" />
+            <element signature="e#2683#2684#0" expanded="true" />
+            <element signature="e#2722#2723#0" expanded="true" />
+            <element signature="e#2756#2757#0" expanded="true" />
+            <element signature="e#2788#2789#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2878#2879#0" expanded="true" />
+            <element signature="e#2914#2915#0" expanded="true" />
+            <element signature="e#2948#2949#0" expanded="true" />
+            <element signature="e#3000#3001#0" expanded="true" />
+            <element signature="e#3046#3047#0" expanded="true" />
+            <element signature="e#3106#3107#0" expanded="true" />
+            <element signature="e#3139#3140#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#3235#3236#0" expanded="true" />
+            <element signature="e#3265#3266#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3329#3330#0" expanded="true" />
+            <element signature="e#3359#3360#0" expanded="true" />
+            <element signature="e#3394#3395#0" expanded="true" />
+            <element signature="e#3425#3426#0" expanded="true" />
+            <element signature="e#3473#3474#0" expanded="true" />
+            <element signature="e#3513#3514#0" expanded="true" />
+            <element signature="e#3548#3549#0" expanded="true" />
+            <element signature="e#3579#3580#0" expanded="true" />
+            <element signature="e#3627#3628#0" expanded="true" />
+            <element signature="e#3667#3668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7955707">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/stiller/ConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4088586">
+          <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#598#610#0" expanded="true" />
+            <element signature="e#672#684#0" expanded="true" />
+            <element signature="e#761#773#0" expanded="true" />
+            <element signature="e#4509#4510#0" expanded="true" />
+            <element signature="e#4545#4546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>mysql-connector-java-5.1.22-bin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DBConnectionPool</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>mysql-connector-java-5.1.22-bin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
