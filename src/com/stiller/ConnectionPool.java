@@ -10,6 +10,7 @@ import java.util.TimerTask;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Created by stiller on 2017/3/21.
@@ -17,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 public class ConnectionPool implements IConnectionPool {
     private DBbean dbBean;
     private boolean isActive = false;
-    private int contActive = 0;
+    private static final AtomicLong contActive = new AtomicLong(0);
 
     private List<Connection> freeConnection = new Vector<Connection>();
     private List<Connection> activeConnection = new Vector<Connection>();
@@ -40,7 +41,7 @@ public class ConnectionPool implements IConnectionPool {
                 // 初始化最小连接数
                 if (conn != null) {
                     freeConnection.add(conn);
-                    contActive++;
+                    contActive.getAndIncrement();
                 }
             }
             isActive = true;
@@ -78,7 +79,7 @@ public class ConnectionPool implements IConnectionPool {
         Connection conn = null;
         try {
             // 判断是否超过最大连接数限制
-            if(contActive < this.dbBean.getMaxActiveConnections()){
+            if(contActive.get() < this.dbBean.getMaxActiveConnections()){
                 if (freeConnection.size() > 0) {
                     conn = freeConnection.get(0);
                     if (conn != null) {
@@ -96,7 +97,7 @@ public class ConnectionPool implements IConnectionPool {
             }
             if (isValid(conn)) {
                 activeConnection.add(conn);
-                contActive += 1;
+                contActive.getAndIncrement();
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -122,7 +123,7 @@ public class ConnectionPool implements IConnectionPool {
         if (isValid(conn)&& !(freeConnection.size() > dbBean.getMaxConnections())) {
             freeConnection.add(conn);
             activeConnection.remove(conn);
-            contActive --;
+            contActive.getAndDecrement();
             threadLocal.remove();
             // 唤醒所有正待等待的线程，去抢连接
             notifyAll();
@@ -151,7 +152,7 @@ public class ConnectionPool implements IConnectionPool {
             }
         }
         isActive = false;
-        contActive = 0;
+        contActive.set(0);
 
     }
 
