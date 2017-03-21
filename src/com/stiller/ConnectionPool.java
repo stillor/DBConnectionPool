@@ -5,12 +5,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Vector;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by stiller on 2017/3/21.
@@ -18,7 +16,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class ConnectionPool implements IConnectionPool {
     private DBbean dbBean;
     private boolean isActive = false;
-    private static final AtomicLong contActive = new AtomicLong(0);
+    private static final AtomicInteger contActive = new AtomicInteger(0);
 
     private List<Connection> freeConnection = new Vector<Connection>();
     private List<Connection> activeConnection = new Vector<Connection>();
@@ -176,6 +174,7 @@ public class ConnectionPool implements IConnectionPool {
     @Override
     public void checkPool() {
         if (dbBean.isCheakPool()) {
+            //设置线程池的数量为10
             ScheduledExecutorService service = Executors.newScheduledThreadPool(10);
             service.schedule(new CurrentConnection(),dbBean.getPeriodCheck(),TimeUnit.SECONDS);
         }
