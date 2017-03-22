@@ -12,16 +12,26 @@ public class DBInitInfo {
         beans = new ArrayList<DBbean>();
         // 这里数据 可以从xml 等配置文件进行获取
         // 为了测试，这里我直接写死
-        DBbean beanMySQL = new DBbean();
-        beanMySQL.setDriverName("com.mysql.jdbc.Driver");
-        beanMySQL.setUrl("jdbc:mysql://localhost:3306/student");
-        beanMySQL.setUserName("root");
-        beanMySQL.setPassword("123456");
+        String driverName = "com.mysql.jdbc.Driver";
+        String url = "jdbc:mysql://localhost:3306/student";
+        String userName = "root";
+        String password = "123456";
+        String poolName = "testPool";
 
-        beanMySQL.setMinConnections(5);
-        beanMySQL.setMaxConnections(100);
+        DBbean dBbean = new DBbean.Builder().driverName(driverName).url(url).password(password).userName(userName)
+                .poolName(poolName).build();
 
-        beanMySQL.setPoolName("testPool");
-        beans.add(beanMySQL);
+
+//        DBbean beanMySQL = new DBbean();
+//        beanMySQL.setDriverName("com.mysql.jdbc.Driver");
+//        beanMySQL.setUrl("jdbc:mysql://localhost:3306/student");
+//        beanMySQL.setUserName("root");
+//        beanMySQL.setPassword("123456");
+
+        dBbean.setMinConnections(5);
+        dBbean.setMaxConnections(100);
+
+//        dBbean.setPoolName("testPool");
+        beans.add(dBbean);
     }
 }

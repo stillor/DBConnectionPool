@@ -27,6 +27,49 @@ public class DBbean {
     private long lazyCheck = 1000*60*60;// 延迟多少时间后开始 检查
     private long periodCheck = 1000*60*60;// 检查频率
 
+    public static class Builder{
+        private String driverName = "";
+        private String url = "";
+        private String password = "";
+        private String userName = "";
+        private String poolName = "";
+
+        public Builder driverName(String str){
+            driverName = str;
+            return this;
+        }
+        public Builder url(String str){
+            url = str;
+            return this;
+        }
+        public Builder password(String str){
+            password = str;
+            return this;
+        }
+        public Builder userName(String str){
+            userName = str;
+            return this;
+        }
+        public Builder poolName(String str){
+            poolName = str;
+            return this;
+        }
+
+        public DBbean build(){
+            return new DBbean(this);
+        }
+
+
+    }
+
+    private DBbean(Builder builder){
+        driverName = builder.driverName;
+        url = builder.url;
+        password = builder.password;
+        userName = builder.userName;
+        poolName = builder.poolName;
+    }
+
     public DBbean(String driverName,String url,String password,String userName,String poolName){
         this.driverName = driverName;
         this.url = url;
