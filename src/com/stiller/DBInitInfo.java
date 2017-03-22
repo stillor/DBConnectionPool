@@ -13,7 +13,7 @@ public class DBInitInfo {
         // 这里数据 可以从xml 等配置文件进行获取
         // 为了测试，这里我直接写死
         String driverName = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/student";
+        String url = "jdbc:mysql://localhost:3306/green";
         String userName = "root";
         String password = "123456";
         String poolName = "testPool";

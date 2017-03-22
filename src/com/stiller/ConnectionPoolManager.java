@@ -10,6 +10,8 @@ import java.util.Hashtable;
 public class ConnectionPoolManager {
     public Hashtable<String,IConnectionPool> pools = new Hashtable<String, IConnectionPool>();
 
+    private volatile static boolean isInit = false;
+
     // 初始化
     private ConnectionPoolManager(){
         init();
@@ -18,8 +20,17 @@ public class ConnectionPoolManager {
     public static ConnectionPoolManager getInstance(){
         return Singtonle.instance;
     }
+
     private static class Singtonle {
         private static ConnectionPoolManager instance =  new ConnectionPoolManager();
+    }
+
+    public boolean isInit(){
+        return this.isInit;
+    }
+
+    public void setInit(boolean b){
+        this.isInit = b;
     }
 
 
@@ -33,6 +44,9 @@ public class ConnectionPoolManager {
                 System.out.println("Info:Init connection successed ->" +bean.getPoolName());
             }
         }
+        System.out.println("inited!");
+        setInit(true);
+
     }
 
     // 获得连接,根据连接池名字 获得连接
