@@ -3,8 +3,7 @@ package com.stiller;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -20,6 +19,8 @@ public class ConnectionPool implements IConnectionPool {
 
     private List<Connection> freeConnection = new Vector<Connection>();
     private List<Connection> activeConnection = new Vector<Connection>();
+
+    private static Map<Thread,Connection> connectionMap = new Hashtable<Thread, Connection>();
 
     private static ThreadLocal<Connection> threadLocal = new ThreadLocal<Connection>();
 
@@ -81,11 +82,17 @@ public class ConnectionPool implements IConnectionPool {
                 if (freeConnection.size() > 0) {
                     conn = freeConnection.get(0);
                     if (conn != null) {
-                        threadLocal.set(conn);
+                        //threadLocal.set(conn);
+                        System.out.println("放置:"+Thread.currentThread()+"  "+conn);
+                        this.connectionMap.put(Thread.currentThread(),conn);
+                        freeConnection.remove(0);
+                    }else{
+                        conn = newConnection();
+                        this.connectionMap.put(Thread.currentThread(),conn);
                     }
-                    freeConnection.remove(0);
                 } else {
                     conn = newConnection();
+                    this.connectionMap.put(Thread.currentThread(),conn);
                 }
 
             }else{
@@ -109,10 +116,10 @@ public class ConnectionPool implements IConnectionPool {
 
     @Override
     public Connection getCurrentConnection() {
-        Connection conn = threadLocal.get();
-        if(!isValid(conn)){
-            conn = getConnection();
-        }
+        Connection conn = this.connectionMap.get(Thread.currentThread());
+//        if(!isValid(conn)){
+//            conn = getConnection();
+//        }
         return conn;
     }
 
