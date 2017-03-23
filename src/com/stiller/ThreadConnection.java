@@ -22,6 +22,8 @@ public class ThreadConnection implements Runnable{
 
             System.out.println("当前线程"+this.threadName+"-> "+getCurrentConnection());
 
+            pool.checkPool();
+
             break;
         }
     }

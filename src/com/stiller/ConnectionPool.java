@@ -20,8 +20,6 @@ public class ConnectionPool implements IConnectionPool {
     private List<Connection> freeConnection = new Vector<Connection>();
     private List<Connection> activeConnection = new Vector<Connection>();
 
-    private static Map<Thread,Connection> connectionMap = new Hashtable<Thread, Connection>();
-
     private static ThreadLocal<Connection> threadLocal = new ThreadLocal<Connection>();
 
     public ConnectionPool(DBbean dbBean){
@@ -82,17 +80,17 @@ public class ConnectionPool implements IConnectionPool {
                 if (freeConnection.size() > 0) {
                     conn = freeConnection.get(0);
                     if (conn != null) {
-                        //threadLocal.set(conn);
-                        System.out.println("放置:"+Thread.currentThread()+"  "+conn);
-                        this.connectionMap.put(Thread.currentThread(),conn);
+                        threadLocal.set(conn);
+//                        System.out.println("放置:"+Thread.currentThread()+"  "+conn);
+//                        this.connectionMap.put(Thread.currentThread(),conn);
                         freeConnection.remove(0);
                     }else{
                         conn = newConnection();
-                        this.connectionMap.put(Thread.currentThread(),conn);
+                        threadLocal.set(conn);
                     }
                 } else {
                     conn = newConnection();
-                    this.connectionMap.put(Thread.currentThread(),conn);
+                    threadLocal.set(conn);
                 }
 
             }else{
@@ -116,10 +114,7 @@ public class ConnectionPool implements IConnectionPool {
 
     @Override
     public Connection getCurrentConnection() {
-        Connection conn = this.connectionMap.get(Thread.currentThread());
-//        if(!isValid(conn)){
-//            conn = getConnection();
-//        }
+        Connection conn = threadLocal.get();
         return conn;
     }
 
@@ -129,6 +124,7 @@ public class ConnectionPool implements IConnectionPool {
             freeConnection.add(conn);
             activeConnection.remove(conn);
             contActive.getAndDecrement();
+
             threadLocal.remove();
             // 唤醒所有正待等待的线程，去抢连接
             notifyAll();
@@ -179,24 +175,11 @@ public class ConnectionPool implements IConnectionPool {
     }
 
     @Override
-    public void checkPool() {
+    public synchronized void checkPool() {
         if (dbBean.isCheakPool()) {
             //设置线程池的数量为10
             ScheduledExecutorService service = Executors.newScheduledThreadPool(10);
-            service.schedule(new CurrentConnection(),dbBean.getPeriodCheck(),TimeUnit.SECONDS);
+            service.scheduleAtFixedRate(new CurrentConnection(),dbBean.getLazyCheck(),dbBean.getPeriodCheck(),TimeUnit.SECONDS);
         }
-//        if(dbBean.isCheakPool()){
-//            new Timer().schedule(new TimerTask() {
-//                @Override
-//                public void run() {
-//                    // 1.对线程里面的连接状态
-//                    // 2.连接池最小 最大连接数
-//                    // 3.其他状态进行检查，因为这里还需要写几个线程管理的类，暂时就不添加了
-//                    System.out.println("空线池连接数："+freeConnection.size());
-//                    System.out.println("活动连接数：："+activeConnection.size());
-//                    System.out.println("总的连接数："+contActive);
-//                }
-//            },dbBean.getLazyCheck(),dbBean.getPeriodCheck());
-//        }
     }
 }

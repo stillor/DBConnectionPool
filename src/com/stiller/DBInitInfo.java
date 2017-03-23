@@ -21,17 +21,8 @@ public class DBInitInfo {
         DBbean dBbean = new DBbean.Builder().driverName(driverName).url(url).password(password).userName(userName)
                 .poolName(poolName).build();
 
-
-//        DBbean beanMySQL = new DBbean();
-//        beanMySQL.setDriverName("com.mysql.jdbc.Driver");
-//        beanMySQL.setUrl("jdbc:mysql://localhost:3306/student");
-//        beanMySQL.setUserName("root");
-//        beanMySQL.setPassword("123456");
-
         dBbean.setMinConnections(5);
         dBbean.setMaxConnections(100);
-
-//        dBbean.setPoolName("testPool");
         beans.add(dBbean);
     }
 }
